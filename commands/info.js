@@ -42,7 +42,7 @@ exports.run = (bot, message, args) => {
         let embed = new RichEmbed()
     .setAuthor(`*\☆ℋค℘℘ℽ★\*𓅂`, `https://cdn.discordapp.com/avatars/573045283856973825/312bc4b8b68a2b9b8688e4ac368edb34.png?size=2048?size=1024`)
         
-        .addField(`Name`, `(`*\☆ℋค℘℘ℽ★\*𓅂, true)
+        .addField(, true)
         .addField(`Discriminator`, `#1862`, true)
         .addField(`Prefix`, `${crafty[message.guild.id].prefix}`, true)
         .addField(`Version`, `[0.0.4a](https://github.com/Zay-Development/Zetsuya-Bot/tree/master)`, true)
