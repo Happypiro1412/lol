@@ -22,7 +22,7 @@ exports.run = async(client, message, args) => { // Modification
         .setThumbnail(client.user.avatarURL)
         .addField("If you have a question / bug report please report them on", "[Discord](https://discord.gg/6sNdqbx)\n_ _",`false`)
         .addField(`Are you don't know how to use this bot? do :`, `${crafty[message.guild.id].prefix}cmds`, `false`) //Kenapa? ~andra//pen biar prefix per server nya muncul///oh wait
-        .setFooter("©Release 2019 | Zetsuya Bot | This bot is still under Development")
+        .setFooter("©Release 2020 | *\☆ℋค℘℘ℽ★\*𓅂 Bot | This bot is still under Development")
         .setTimestamp()
         message.channel.send(embed);
   message.delete();

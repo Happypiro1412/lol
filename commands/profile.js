@@ -21,7 +21,7 @@ if (member.user.bot === true) {
 
             let embed = new Discord.RichEmbed()
                 //.setAuthor(member.user.username)
-                .setAuthor(`Zetsuya | ぜつや`, `https://images-ext-1.discordapp.net/external/ajWUSzEm6V_PVGGct42J3h8swrQEirySEBKq9J4-5WU/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/604652011857641484/b92a72f9537a38687d19939b056090e5.png`)
+    .setAuthor(`*\☆ℋค℘℘ℽ★\*𓅂`, `https://cdn.discordapp.com/avatars/573045283856973825/312bc4b8b68a2b9b8688e4ac368edb34.png?size=2048?size=1024`)
                 .setThumbnail((target.displayAvatarURL))
                 .setColor(0xECD4FC)
                 .addField("Username", `${member.user.username}`, inline)
@@ -31,7 +31,7 @@ if (member.user.bot === true) {
                 .addField("Status", `${status[member.user.presence.status]}`, inline, true)
             .addField("Acc Created at", member.user.createdAt.toLocaleString(), true)
                 .addField("Roles", `${member.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles"}`, true)
-            //    .setFooter("©Release 2019 | Zetsuya Bot | This bot is still under Development")
+            //    .setFooter("©Release 2020 | *\☆ℋค℘℘ℽ★\*𓅂 Bot | This bot is still under Development")
                 .setTimestamp()
     
             message.channel.send(embed);

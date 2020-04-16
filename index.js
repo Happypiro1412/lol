@@ -62,7 +62,7 @@ function random_playing(bot)  {
 
 client.on('ready', () => {
   var clientlog = `
-[BOT LOGS] Zetsuya Community [BOT LOGS]
+[BOT LOGS] HAPPY Community [BOT LOGS]
 =============================================
 With ${client.users.size} users
 With ${client.guilds.size} servers
