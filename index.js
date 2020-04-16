@@ -162,12 +162,12 @@ client.on('message', async msg => {
 //End of code Prefix Command
  /* if (msg == `<@${client.user.id}>` || msg == `<@!${client.user.id}>`) {
     let tagEmbed = new Discord.RichEmbed()    
-    .setAuthor(`*☆ℋค℘℘ℽ★*𓅂`, `https://images-ext-1.discordapp.net/external/ajWUSzEm6V_PVGGct42J3h8swrQEirySEBKq9J4-5WU/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/604652011857641484/b92a72f9537a38687d19939b056090e5.png`)
+    .setAuthor(`*\☆ℋค℘℘ℽ★\*𓅂`, `https://cdn.discordapp.com/avatars/573045283856973825/312bc4b8b68a2b9b8688e4ac368edb34.png?size=2048?size=1024`)
     .addField(`Version`, `0.0.1a`, true)
     .addField(`Node JS`, `9.x`, true)
     .addField(`Library`, `[discord.js](https://discord.js.org/#/)`, true)
     .addField(`Developer`, `Zay#5616`, true)
-    .setFooter("©Zetsuya Bot | Prefix: z! | This bot is still under Development")
+    .setFooter("*\☆ℋค℘℘ℽ★\*𓅂 | Prefix: // | This bot is still under Development")
     .setColor(`RANDOM`)
     msg.channel.send(tagEmbed); 
 }*/
