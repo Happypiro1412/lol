@@ -10,7 +10,7 @@ exports.run = (bot, message, args) => {
         .setColor(`#ecd4fc`)
         .addField("Latency", `${diff}ms`, true)
         .addField("API", `${API}ms`, true)
-        .setFooter("©Release 2019 | Zetsuya Bot | This bot is still under Development")
+        .setFooter("©Release 2020 | *\☆ℋค℘℘ℽ★\*𓅂 Bot | This bot is still under Development")
         message.channel.send(embed);
     });
 }
