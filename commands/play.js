@@ -16,7 +16,7 @@ exports.run = async (bot, msg, args) => {
   }//anjir ini kok crafty?;v //coding crafty cuk. || owh // ga bisa nih.
   //args = args.slice(0)
   const searchString = args.join(' ');
-	const url = args[0] ? args[0].replace(/<(.+)>/g, '$1') : '';
+	const url = args[0] ? args[0].replace(/<(.+)>/g, '$0') : '';
   const serverQueue = queue.get(msg.guild.id);
   
 		const voiceChannel = msg.member.voiceChannel;
