@@ -308,7 +308,7 @@ function play(guild, song) {
     return;
   }
   console.log(serverQueue.songs);
-   const dispatcher = serverQueue.connection.playStream(ytdl(song.url, { filter: 'audioonly', quality: 'highest' }))
+   const dispatcher = serverQueue.connection.playStream(ytdl(song.url, { filter: 'audioonly', quality: 'highest' }, {bitrate: 192000 /* 192kbps */}))
   .on('end', reason => {
     let end = new Discord.RichEmbed()
     .setDescription(`**${song.title} is end!**`)
