@@ -21,9 +21,9 @@ if (member.user.bot === true) {
 
             let embed = new Discord.RichEmbed()
                 //.setAuthor(member.user.username)
-    .setAuthor(`𝕓𝕪 *\☆ℋค℘℘ℽ★\*𓅂`, `https://cdn.discordapp.com/attachments/718305766049841210/718307129462620240/JPEG_20200602_131016.jpg`)
+    .setAuthor(`* 𝕓𝕪\☆ℋค℘℘ℽ★\*𓅂`, `https://cdn.discordapp.com/attachments/718305766049841210/718307129462620240/JPEG_20200602_131016.jpg`)
                 .setThumbnail((target.displayAvatarURL))
-                .setColor(CF65FA)
+                .setColor(0xECD4FC)
                 .addField("Username", `${member.user.username}`, inline)
                 .addField("Discriminator", `${member.user.discriminator}`, inline)
                 .addField("ID", member.user.id, inline)
