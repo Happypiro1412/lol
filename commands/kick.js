@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
     
       .catch(error => message.reply(`Sorry, I couldn't kick because of : ${error}`));
       let kick = new Discord.RichEmbed()
-      .setColor(`#ecd4fc`)
+      .setColor(`#FF5911`)
       .setTitle(`Kick | ${member.user.tag}`)
       .addField("User", member, true)
       .addField("Moderator", message.author, true)

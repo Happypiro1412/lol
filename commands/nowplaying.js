@@ -14,7 +14,7 @@ if(!serverQueue) return msg.channel.send({ embed: { color: 0x06238B, description
     authors: msg.author,
     };
   const emb = new Discord.RichEmbed()
-  .setColor('ecd4fc') 
+  .setColor('2EFF11') 
  // .setAuthor(serverQueue.songs[0].author.tag, serverQueue.songs[0].author.avatarURL)
   .setTitle(`${serverQueue.songs[0].title}`)
   .setURL(serverQueue.songs[0].url)
