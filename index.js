@@ -166,7 +166,7 @@ client.on('message', async msg => {
     .addField(`Version`, `0.0.1a`, true)
     .addField(`Node JS`, `9.x`, true)
     .addField(`Library`, `[discord.js](https://discord.js.org/#/)`, true)
-    .addField(`Developer`, `Zay#5616`, true)
+    .addField(`Developer`, `*\☆ℋค℘℘ℽ★\*𓅂#7131`, true)
     .setFooter("*\☆ℋค℘℘ℽ★\*𓅂 | Prefix: // | This bot is still under Development")
     .setColor(`RANDOM`)
     msg.channel.send(tagEmbed); 

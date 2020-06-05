@@ -33,7 +33,7 @@ removeCooldown(message.author.id, 10000);
     if (message.mentions.users.size < 1) return message.channel.send("Didnt mention a user to report.")
     let modlog = message.guild.channels.find('name', "reports");
     const embed = new Discord.RichEmbed()
-        .setColor(`#ecd4fc`)
+        .setColor(`#FB2903`)
         .setTitle("Report")
         .addField("Reported By:", message.author.tag + " (ID: " + message.author.id + ")")
         .addField("Reported User:", member.user.username + " (ID: " + member.id + ")")

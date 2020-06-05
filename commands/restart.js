@@ -5,8 +5,8 @@ module.exports.run = async (client, message, args) => {
     let embed = new Discord.RichEmbed()
     .setTitle("Restart")
     .setDescription("u bukan developer :)")
-    .setColor(`#ecd4fc`);
-    if(message.author.id !== '717932434691194953') return message.channel.send(embed);
+    .setColor(`#FA4106`);
+    if(message.author.id !== '707503577731432529') return message.channel.send(embed);
     message.channel.send(`>>> Restarted in ${Math.floor(client.ping / 100)}ms`).then(() => {
         process.exit(1);
     })
