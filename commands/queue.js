@@ -9,6 +9,7 @@ exports.run = async(client, msg, args) => {
 
 ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
 
+
 **Now Playing:** ${serverQueue.songs[0].title}
 		`);
 	}
