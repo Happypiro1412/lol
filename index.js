@@ -55,9 +55,9 @@ require("./server.js");
 
 //coba restart.//ga jadi. gw aja.//dah tuh.
 function random_playing(bot)  {
-  let status = [`${client.users.size} Users`, `${client.channels.size} Channels`, `${client.guilds.size} Server`] // You cant set anything playing you want it!
+  let status = [`${client.users.size} Users`, `${client.channels.size} Channels`, `${client.guilds.size} Server`, `${process.env.prefix}help`,] // You cant set anything playing you want it!
   let random = status[Math.floor(Math.random() * status.length)]
-  client.user.setActivity(random, {type: "WATCHING"}); 
+  client.user.setActivity(random, {type: "PLAYING"}); 
 }//ngk ada error kan?tapi kok ngk muncul//btr//thx
 
 client.on('ready', () => {
@@ -71,7 +71,7 @@ With ${client.channels.size} channels
 `
   
   console.log(clientlog);
-  setInterval(random_playing, 5000);
+  setInterval(random_playing, 500);
 });
 
 client.on('guildMemberAdd', async member => {
