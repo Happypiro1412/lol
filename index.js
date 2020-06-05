@@ -267,7 +267,7 @@ console.log(video);
 			songs: [],
 			volume: 100,
 			playing: true,
-      loop: true
+      loop: false
 		};
 		queue.set(message.guild.id, queueConstruct);
 
