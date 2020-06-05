@@ -241,7 +241,7 @@ exports.queue = queue;
 
 async function handleVideo(video, message, voiceChannel, playlist = false) {
 	const serverQueue = queue.get(message.guild.id);
-//	  const curentDurationMinute = Math.floor(serverQueue.connection.dispatcher.time/60000) < 10 ? `0${Math.floor(serverQueue.connection.dispatcher.time/60000)}` : Math.floor(serverQueue.connection.dispatcher.time/60000);
+//	  const curentDurationMinute = Math.floor(serverQueue.connection.dispatcher.time/60000) < 10 ? `0${Math.floor(serverQueue.connection..time/60000)}` : Math.floor(serverQueue.connection.dispatcher.time/60000);
 //  const currentDurationSeconds = Math.floor((serverQueue.connection.dispatcher.time%60000)/1000) < 10 ? `0${Math.floor((serverQueue.connection.dispatcher.time%60000)/1000)}` : Math.floor((serverQueue.connection.dispatcher.time%60000)/1000);
 console.log(video);
 	const song = {
@@ -268,7 +268,7 @@ console.log(video);
 			songs: [],
 			volume: 100,
 			playing: true,
-      loop: false
+      loop: true
 		};
 		queue.set(message.guild.id, queueConstruct);
 
@@ -289,7 +289,7 @@ console.log(video);
 		if (playlist) return undefined;
 
     var addedembed = new RichEmbed()
-    .setColor(`#ecd4fc`)
+    .setColor(`#ACFA06`)
     .setDescription(`**[${song.title}](${song.url})**`)
   .setThumbnail(`https://i.ytimg.com/vi/${song.id}/default.jpg?width=80&height=60`)
   .setFooter(`Requested By ${song.authors.tag}`)
@@ -312,7 +312,7 @@ function play(guild, song) {
   .on('end', reason => {
     let end = new Discord.RichEmbed()
     .setDescription(`**${song.title} is end!**`)
-    .setColor(`ecd4fc`)
+    .setColor(`ACFA06`)
     serverQueue.textChannel.send(end)
     if (reason === 'Stream is not generating quickly enough.') console.log('Song ended.');
     else console.log(reason);
@@ -324,7 +324,7 @@ function play(guild, song) {
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 100);
   
   var playembed = new RichEmbed()
-  .setColor(`#ecd4fc`)
+  .setColor(`#ACFA06`)
   .setAuthor(`Now playing:`)//, `https://cdn.discordapp.com/emojis/594866513555750951.png?v=1`)
   .setThumbnail(`https://i.ytimg.com/vi/${song.id}/default.jpg?width=80&height=60`)
   .setDescription(`**[${song.title}](${song.url}) ${require('./util.js').timeString(song.durationmm)}**`)
