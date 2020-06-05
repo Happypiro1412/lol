@@ -18,7 +18,7 @@ exports.run = async(client, message, args) => { // Modification
     let embed1 = new RichEmbed()
         let embed = new RichEmbed()
      .setAuthor(`*\☆ℋค℘℘ℽ★\*𓅂`, `https://cdn.discordapp.com/attachments/718305766049841210/718307129462620240/JPEG_20200602_131016.jpg`)
-        .setColor(`#ecd4fc`)
+        .setColor(`#14FCC4`)
         .setThumbnail(client.user.avatarURL)
         .addField("If you have a question / bug report please report them on", "[Discord](https://discord.gg/6sNdqbx)\n_ _",`false`)
         .addField(`Are you don't know how to use this bot? do :`, `${crafty[message.guild.id].prefix}cmds`, `false`) //Kenapa? ~andra//pen biar prefix per server nya muncul///oh wait
