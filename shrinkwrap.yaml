@@ -31,7 +31,7 @@ dependencies:
   simple-youtube-api: 5.2.1
   snekfetch: 4.0.4
   superagent: 4.1.0
-  ytdl-core: 0.29.4
+  ytdl-core: 2.1.5
 packages:
   /abbrev/1.1.1:
     dev: false
@@ -803,12 +803,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=
-  /html-entities/1.2.1:
+  /html-entities/1.3.1:
     dev: false
-    engines:
-      '0': node >= 0.4.0
     resolution:
-      integrity: sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
+      integrity: sha512-rhE/4Z3hIhzHAUKbW8jVcCyuT5oJCXXqhN/6mXXVCpzTmvJnoH2HL/bt3EZ6p55jbFJBeAe1ZNpL5BugLujxNA==
   /http-errors/1.7.2:
     dependencies:
       depd: 1.1.2
@@ -999,15 +997,15 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-X/2yK+b4aDKZ217m3LJF3fKfzl8X9duDmGyLq1pm/Q+/P8e4pJzmMaP+Z+sRLwtLaUsyvSzvdzk1EAP23cWvvQ==
-  /m3u8stream/0.6.2:
+  /m3u8stream/0.7.1:
     dependencies:
-      miniget: 1.5.3
+      miniget: 1.7.2
       sax: 1.2.4
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     resolution:
-      integrity: sha512-WsuM2bd5pPN80xvfrB+1DZqr4M7+kJl8byi6+ZCy6cmVjEiHhmr/desN53Ngsa6Hs13kYumeVgT4wL0oIJ+v6g==
+      integrity: sha512-z6ldnAdhbuWOL6LmMkwptSZGzj+qbRytMKLTbNicwF/bJMjf9U9lqD57RNQUFecvWadEkzy6PDjcNJFFgi19uQ==
   /make-dir/1.3.0:
     dependencies:
       pify: 3.0.0
@@ -1082,12 +1080,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
-  /miniget/1.5.3:
+  /miniget/1.7.2:
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     resolution:
-      integrity: sha512-6xiJs3ZGBdrNMlPNlEWirHhY53hSW33nG1Ytub9Cg5+jLhFPn9PGe4FmPZK9WlmDE1N7/8DEL7PGr7r9kbxwgw==
+      integrity: sha512-USPNNK2bnHLOplX8BZVMehUkyQizS/DFpBdoH0TS+fM+hQoLNg9tWg4MeY9wE8gfY0pbzmx5UBEODujt3Lz8AA==
   /minimatch/3.0.4:
     dependencies:
       brace-expansion: 1.1.11
@@ -1930,17 +1928,17 @@ packages:
     dev: false
     resolution:
       integrity: sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=
-  /ytdl-core/0.29.4:
+  /ytdl-core/2.1.5:
     dependencies:
-      html-entities: 1.2.1
-      m3u8stream: 0.6.2
-      miniget: 1.5.3
+      html-entities: 1.3.1
+      m3u8stream: 0.7.1
+      miniget: 1.7.2
       sax: 1.2.4
     dev: false
     engines:
-      node: '>=6'
+      node: '>=10'
     resolution:
-      integrity: sha512-YvSgJS8yplbjv+TVOFTQTI/dsQxknwNHV4zt2GFrx5J71pxRKOElZy2qv7zPBM+W7QcBB5U7a21Nil0RFeP7Ig==
+      integrity: sha512-6iDMndnf9/zxUaDYw8MjK4kie/wp7LqJ9nwBsrP3GvyNL3nZcnaiQi957YPBncUzmGZZUNUqA1gRNieYl+z6Fg==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -1977,4 +1975,4 @@ specifiers:
   simple-youtube-api: ^5.1.1
   snekfetch: ^4.0.4
   superagent: ^4.0.0
-  ytdl-core: ^0.29.2
+  ytdl-core: ^2.0.1
