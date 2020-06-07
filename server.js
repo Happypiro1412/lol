@@ -8,4 +8,4 @@ app.get("/", (request, response) => {
 app.listen(process.env.PORT);
 setInterval(() => {
   http.get(`http://zetsuya.glitch.me/`);
-}, 216000000000000000000000000000000000);
+}, 280000);
