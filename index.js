@@ -55,7 +55,7 @@ require("./server.js");
 
 //coba restart.//ga jadi. gw aja.//dah tuh.
 function random_playing(bot)  {
-  let status = [`${client.users.size} Users`, `${client.guilds.size} Server`, `${process.env.prefix}help`,] // You cant set anything playing you want it!
+  let status = [`${client.users.size} Users`, `${client.guilds.size} Server`, `music | ${process.env.prefix}help`,] // You cant set anything playing you want it!
   let random = status[Math.floor(Math.random() * status.length)]
   client.user.setActivity(random, {type: "WATCHING"}); 
 }//ngk ada error kan?tapi kok ngk muncul//btr//thx
@@ -72,12 +72,6 @@ With ${client.guilds.size} servers
   console.log(clientlog);
   setInterval(random_playing, 2500);
 });
-require("./server.js");
-
-//coba restart.//ga jadi. gw aja.//dah tuh.
-function random_playing(bot)  {
-  let status = [`${client.users.size} Users`, `${client.guilds.size} Server`, `${process.env.prefix}help`,] // You cant set anything playing you want it!
-  let random = status[Math.floor(Math.random() * status.length)]
 
 client.on('guildMemberAdd', async member => {
   
@@ -167,12 +161,12 @@ client.on('message', async msg => {
 //End of code Prefix Command
  /* if (msg == `<@${client.user.id}>` || msg == `<@!${client.user.id}>`) {
     let tagEmbed = new Discord.RichEmbed()    
-    .setAuthor(`*\☆ℋค℘℘ℽ★\*𓅂`, `https://cdn.discordapp.com/avatars/573045283856973825/312bc4b8b68a2b9b8688e4ac368edb34.png?size=2048?size=1024`)
+    .setAuthor(`Zetsuya | ぜつや`, `https://images-ext-1.discordapp.net/external/ajWUSzEm6V_PVGGct42J3h8swrQEirySEBKq9J4-5WU/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/604652011857641484/b92a72f9537a38687d19939b056090e5.png`)
     .addField(`Version`, `0.0.1a`, true)
     .addField(`Node JS`, `9.x`, true)
     .addField(`Library`, `[discord.js](https://discord.js.org/#/)`, true)
-    .addField(`Developer`, `*\☆ℋค℘℘ℽ★\*𓅂#7131`, true)
-    .setFooter("*\☆ℋค℘℘ℽ★\*𓅂 | Prefix: // | This bot is still under Development")
+    .addField(`Developer`, `Zay#5616`, true)
+    .setFooter("©Zetsuya Bot | Prefix: z! | This bot is still under Development")
     .setColor(`RANDOM`)
     msg.channel.send(tagEmbed); 
 }*/
@@ -246,7 +240,7 @@ exports.queue = queue;
 
 async function handleVideo(video, message, voiceChannel, playlist = false) {
 	const serverQueue = queue.get(message.guild.id);
-//	  const curentDurationMinute = Math.floor(serverQueue.connection.dispatcher.time/60000) < 10 ? `0${Math.floor(serverQueue.connection..time/60000)}` : Math.floor(serverQueue.connection.dispatcher.time/60000);
+//	  const curentDurationMinute = Math.floor(serverQueue.connection.dispatcher.time/60000) < 10 ? `0${Math.floor(serverQueue.connection.dispatcher.time/60000)}` : Math.floor(serverQueue.connection.dispatcher.time/60000);
 //  const currentDurationSeconds = Math.floor((serverQueue.connection.dispatcher.time%60000)/1000) < 10 ? `0${Math.floor((serverQueue.connection.dispatcher.time%60000)/1000)}` : Math.floor((serverQueue.connection.dispatcher.time%60000)/1000);
 console.log(video);
 	const song = {
@@ -294,7 +288,7 @@ console.log(video);
 		if (playlist) return undefined;
 
     var addedembed = new RichEmbed()
-    .setColor(`#ACFA06`)
+    .setColor(`#ecd4fc`)
     .setDescription(`**[${song.title}](${song.url})**`)
   .setThumbnail(`https://i.ytimg.com/vi/${song.id}/default.jpg?width=80&height=60`)
   .setFooter(`Requested By ${song.authors.tag}`)
@@ -313,11 +307,11 @@ function play(guild, song) {
     return;
   }
   console.log(serverQueue.songs);
-   const dispatcher = serverQueue.connection.playStream(ytdl(song.url, { filter: 'audioonly', quality: 'highest' }, {bitrate: 256000 /* 256 kbps */}))
+   const dispatcher = serverQueue.connection.playStream(ytdl(song.url, { filter: 'audioonly', quality: 'highest' }))
   .on('end', reason => {
     let end = new Discord.RichEmbed()
     .setDescription(`**${song.title} is end!**`)
-    .setColor(`ACFA06`)
+    .setColor(`ecd4fc`)
     serverQueue.textChannel.send(end)
     if (reason === 'Stream is not generating quickly enough.') console.log('Song ended.');
     else console.log(reason);
@@ -329,7 +323,7 @@ function play(guild, song) {
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 100);
   
   var playembed = new RichEmbed()
-  .setColor(`#ACFA06`)
+  .setColor(`#ecd4fc`)
   .setAuthor(`Now playing:`)//, `https://cdn.discordapp.com/emojis/594866513555750951.png?v=1`)
   .setThumbnail(`https://i.ytimg.com/vi/${song.id}/default.jpg?width=80&height=60`)
   .setDescription(`**[${song.title}](${song.url}) ${require('./util.js').timeString(song.durationmm)}**`)
