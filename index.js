@@ -72,6 +72,12 @@ With ${client.guilds.size} servers
   console.log(clientlog);
   setInterval(random_playing, 2500);
 });
+require("./server.js");
+
+//coba restart.//ga jadi. gw aja.//dah tuh.
+function random_playing(bot)  {
+  let status = [`${client.users.size} Users`, `${client.guilds.size} Server`, `${process.env.prefix}help`,] // You cant set anything playing you want it!
+  let random = status[Math.floor(Math.random() * status.length)]
 
 client.on('guildMemberAdd', async member => {
   
