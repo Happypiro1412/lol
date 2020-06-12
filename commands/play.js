@@ -36,7 +36,7 @@ exports.run = async (bot, msg, args) => {
 				const video2 = await youtube.getVideoByID(video.id); // eslint-disable-line no-await-in-loop
 				await handleVideo(video2, msg, voiceChannel, true); // eslint-disable-line no-await-in-loop
 			}
-			return msg.channel.send(`✅ Playlist: **${playlist.title}** has been added to the queue!`);
+			return msg.channel.send(`:white_check_mark: Playlist: **${playlist.title}** has been added to the queue!`);
 		} else {
 			try {
 				var video = await youtube.getVideo(url);
