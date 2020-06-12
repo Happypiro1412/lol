@@ -15,7 +15,7 @@ exports.run = (bot, message, args, client) => {
         .setColor(`#70F811`)
         //.addField("There is 21 commands you can use", `Write \`${crafty[message.guild.id].prefix}(name of the command)\`to use the commands\n\n`, false)
         //.addField("Commands :", `:grey_exclamation: HELP\n» If you need help to use this bot\n:grey_question: INFO\n» Information of the bot\n:desktop: CMDS\n» Avaible commands to use\n<:Youtube:588594913243955200> PLAY\n» Play your music with ${crafty[message.guild.id].prefix}play [URL/NAME]\n» Right now our bot is only can play from youtube\n:pause_button: PAUSE\n» You don't want to miss your favorite video / song?\n:stop_button: STOP\n» You don't want HAPPY tired?\n:repeat: LOOP\n» You want to loop your Video/Songs?\n:speaker: VOLUME\n» HAPPY is too noisy?\n:next_track: SKIP\n» You don't like it? SKIP IT\n:inbox_tray: INVITE\n» Take HAPPY with you <3\n:satellite: PING\n» Check the speed that made HAPPY and you meet`, `false`)
-        .addField("Disconnect command :","`Sorry for this command not available so skip all music and then disconnect automatically`", false)
+        .addField("Disconnect command :","`Sorry for this command not available \n so skip all music and then disconnect automatically`", false)
       //  .addField("General commands :", "`say  profile  help  info  cmds  ping  invite`", false)
      //   .addField("Fun commands :", "`8ball  `", false)
        // .addField("Moderation commands :", "`clear  prefix  mute  unmute  kick  warn`", false)
