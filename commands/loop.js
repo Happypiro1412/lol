@@ -6,12 +6,12 @@ exports.run = async(client, msg, args) => { //mampus terkejut merah semua :u
   const serverQueue = queue.get(message.guild.id);
   if(!message.member.voiceChannel) return message.channel.send({
         embed: {
-            description: `${message.author}, Anda tidak berada di saluran suara!.`
+            description: `${message.author}, plz connect vc.`
         }
     });
     if(!serverQueue) return message.channel.send({
         embed: {
-            description: `Tidak ada yang bermain`
+            description: `Nobody plays`
         }
     });
     serverQueue.loop = !serverQueue.loop;
@@ -19,13 +19,13 @@ exports.run = async(client, msg, args) => { //mampus terkejut merah semua :u
     message.react('🔁');
     if(serverQueue.loop) return message.channel.send({
         embed: {
-            description: `:repeat: mengulangi antrian saat ini!`
+            description: `:repeat: repeats the current queue!`
         }
     })
     message.react('🔁');
     return message.channel.send({
         embed: {
-            description: `:repeat: Berhenti mengulangi antrian saat ini!`
+            description: `:repeat: Stop repeating the current queue!`
         }
     })
 }//:V
