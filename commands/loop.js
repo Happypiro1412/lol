@@ -6,7 +6,7 @@ exports.run = async(client, msg, args) => { //mampus terkejut merah semua :u
   const serverQueue = queue.get(message.guild.id);
   if(!message.member.voiceChannel) return message.channel.send({
         embed: {
-            description: `${message.author}, plz connect vc.`
+            description: `${message.author}, plz connect vc :).`
         }
     });
     if(!serverQueue) return message.channel.send({
