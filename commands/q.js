@@ -15,5 +15,5 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
 	}
 
 exports.help = {
-  name: "queue"
+  name: "q"
 }
